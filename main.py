@@ -1,7 +1,7 @@
 from difPy import dif
 import os, datetime, shutil
 
-path = r"C:\Users\tyler\Pictures\Camera Roll"
+path = r"folder_direct_path"
 savepath = os.path.join(path, "Saved Pics")
 
 def list_full_paths(directory):
@@ -18,7 +18,6 @@ for i in range(len(list)):
     listd[list[i]] = str(datetime.datetime.fromtimestamp(os.path.getmtime(list[i])))
 listd2 = {}
 
-dates = []
 years = []
 date = ""
 year = ""
