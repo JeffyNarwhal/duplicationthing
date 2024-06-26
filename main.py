@@ -41,5 +41,3 @@ for i in range(len(years)):
         if listd2[x] == years[i]:
             shutil.copy(x, os.path.join(savepath, listd2[x], ((listd[x].split())[0] + "-" + str(value) + ".jpg")))
             value += 1
-
-print(len(listd2))
